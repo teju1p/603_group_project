@@ -1,0 +1,28 @@
+1.	DATA SOURCE:
+
+The dataset is collected from data.gov website, which is a legitimate United States government website. The dataset was updated lastly on April 5, 2024. It has 29 columns and over 2 million rows of data. 
+
+The available location of dataset is:
+https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes/resource/b5a431d2-4832-43a6-9334-86b62bdb033f
+
+2.	DATA INGESTION:
+
+It is the process of importing large dataset into a cloud-based storage – where it can be accessed and analyzed. 
+
+Detailed sequence of steps for Data ingestion using Google Cloud SDK (‘gcloud’) and ‘gsutil’.
+
+i.	Prerequisite: Ensured that python 3 is installed on your local machine, which is required for running some components of Google Cloud SDK.
+ii.	Install cloud SDK: Install Google Cloud SDK on your local machine to interact Google Cloud Platform (GCP) Services.
+iii.	Authentication: Used ‘gcloud auth login’ to authenticate with Google Cloud SDK, allowing you to access GCP resources.
+iv.	Initialization: Ran ‘gcloud init’ to initialize the Google Cloud SDK on your local machine, configuring it with your preferences and credentials.
+v.	Bucket Creation: Created a Google Cloud Storage bucket using ‘gcloud storage buckets create’, specifying a unique name 
+                ‘gcloud storage buckets create gs://603-bigdata-project-group/’
+vi.	File Upload: Moved to the downloads folder (cd downloads) where the CSV file (Motor_Vehicle_Collisions_-_Crashes.csv) is located and used gsutil cp to copy the file to the newly created Google Cloud Storage bucket (gs://603-bigdata-project-group).
+                 ‘gsutil cp Motor_Vehicle_Collisions_-_Crashes.csv gs://603-bigdata-project-group’
+vii.	Verification: Verified the upload by listing the contents of the bucket using gsutil ls.
+                  ‘gsutil ls gs://603-bigdata-project-group/’
+
+3.	DATA STORAGE:
+
+Now the dataset is available in Google Cloud Storage platform. Which will be accessible for further analyzation and processing.
+
