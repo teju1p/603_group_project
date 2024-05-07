@@ -19,11 +19,12 @@ How to run this project?
 6. once you are done, you are ready to run the notebook.
 
 7. Here to get data from GCP to your system, you must have "gcs-connector-hadoop3-latest.jar" file and "bigdata-project-603-cbaafc8fbd38.json" file in your system
-8. Your jar file must be in jars directory of your Apache Spark installation.
+8. That jar file can be download from gcp and json has uploaded here.
+9. Your jar file must be in jars directory of your Apache Spark installation.
 
-9. First there is file "1. Data collection to Storage" -- in this step i gave details about how to upload data using gsutil commands to Google cloud Storage.
-10. And then once uploaded to cloud storage, you are ready to use that data.
-11. And the next step is, there is a file called "Data reading from gcp and data cleaning.ipynb" you can download and run this. Through this file we can get data from cloud storage and done some data cleaning.
-12. and the next file is "3. Feature Engineering and Data Analysis.ipynb" -- Here feature engineering and Data analysis had done 
-13. the next file is "4. Feature Engineering and Data Balancing.ipynb" -- Here Data balancing has done
-14. The next file is "5. Data Modelling using MLlib.iynb" -- making predictions in this file
+10. First there is file "1. Data collection to Storage" -- in this step i gave details about how to upload data using gsutil commands to Google cloud Storage.
+11. And then once uploaded to cloud storage, you are ready to use that data.
+12. And the next step is, there is a file called "Data reading from gcp and data cleaning.ipynb" you can download and run this. Through this file we can get data from cloud storage and done some data cleaning.
+13. and the next file is "3. Feature Engineering and Data Analysis.ipynb" -- Here feature engineering and Data analysis had done 
+14. the next file is "4. Feature Engineering and Data Balancing.ipynb" -- Here Data balancing has done
+15. The next file is "5. Data Modelling using MLlib.iynb" -- making predictions in this file
